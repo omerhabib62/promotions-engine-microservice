@@ -57,3 +57,7 @@ symfony console make:migration
 <br/>
 Now from migration to create tables in database use :
 symfony console doctrine:migrations:migrate
+
+<br/>
+mysql -h 127.0.0.1 -P custom_port -u user_name_in_docker_compose -p (for running the docker mysql in cmd. So get those credentials type 
+symfony var:export --multiline ).

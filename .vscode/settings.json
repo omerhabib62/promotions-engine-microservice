@@ -1,3 +1,16 @@
 {
-    "docwriter.style": "Auto-detect"
+    "docwriter.style": "Auto-detect",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "MySQL",
+            "name": "Promotions_engine_db_docker",
+            "connectString": "mysql://root:password@127.0.0.1:52680/main?sslmode=disable&charset=utf8mb4"
+        }
+    ]
 }
