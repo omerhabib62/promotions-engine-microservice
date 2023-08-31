@@ -1,11 +1,15 @@
 # promotions-engine-microservice
 This repository is for learning symfony by creating a promtions service and its based on microservice architecture. 
-
+<br/>
 
 # Resources
 For tutorial of this project - https://www.youtube.com/watch?v=pZv93AEJhS8&ab_channel=GaryClarke
+<br/>
 For setting up vs code - https://www.youtube.com/watch?v=wSw-kDBW_Zw&ab_channel=CodeWithDary
+<br/>
 For symfony setup - https://symfony.com/doc/current/setup.html
+<br/>
+<br/>
 
 --- 
 # Notes
@@ -41,3 +45,15 @@ https://json2dto.atymic.dev/
  -> You can always add more fields later manually or by re-running this command.
  <br/>
  -> When you're done, create a migration with php bin/console make:migration
+ <br/>
+ -> symfony var:export --multiline to see environment variables the binary is exposing
+ The .env code will be overwritten when using Symfony binary.
+
+<br/>
+To generate SQL(DB) from entities, using migration command (because its about docker , and php is not read in docker container) 
+/n
+symfony console make:migration
+
+<br/>
+Now from migration to create tables in database use :
+symfony console doctrine:migrations:migrate
